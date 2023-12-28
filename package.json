@@ -21,7 +21,6 @@
     "install": "^0.13.0",
     "jquery": "^3.7.1",
     "moment": "^2.29.4",
-    "node": "^21.2.0",
     "rrule": "^2.8.1"
   },
   "main": "index.js",
