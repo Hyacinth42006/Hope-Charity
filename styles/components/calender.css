@@ -1,0 +1,26 @@
+#calender{
+    width: 14rem;
+    font-size: var(--size-xs);
+    font-weight: 400;
+}
+
+.fc-daygrid-day-events{
+    display: none;
+}
+
+.fc-direction-ltr{
+    text-align: center;
+}
+
+.fc-day{
+    background-color: var(--clr-lblue);
+    color: var(--clr-dblue);
+    font-weight: 700;
+  }
+
+/* .fc-event{
+    background-color: var(--clr-blue);
+    color: var(--clr-orange) ;
+} */
+
+

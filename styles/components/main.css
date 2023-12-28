@@ -1,0 +1,578 @@
+.Hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -6rem;
+}
+
+.Hero__chunk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 9.6rem;
+    z-index: 100;
+    border-radius: 20px;
+}
+
+.Hero__title{
+    font-size: var(--size-5xl);
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.Hero__subTitle{
+    font-size: var(--size-xl);
+    font-weight: 300;
+    opacity: 1;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    border: 1px solid var(--clr-orange);
+    font-size: var(--size-xl);
+    color: var(--clr-orange);    
+    padding: .75rem;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: 700;
+}
+
+.Hero__img{
+    width: 100vw;
+    height: 40rem;
+    z-index: 1;
+}
+
+.Hero__img--s{
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.Hero__img--l{
+    display: none;
+}
+
+.HOPE{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    padding: 1rem;
+    top: -3rem;
+    /* margin: 4rem 0; */
+    background: linear-gradient(to right, #0f2f6a 10%, rgba(0,0,0,.6), rgba(0,0,0,0)), url("./HOPE.png");
+    background-repeat: none;
+    background-position: 75% center;
+    background-size: cover;
+    border-radius: 20px;
+    background-clip: padding-box;
+    border: none;
+}
+
+.HOPE__letters{
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.HOPE__letters h1{
+    background-color: var(--clr-blue);
+    border-radius: 20px;
+    padding: 1.5rem;
+    font-size: var(--size-5xl);
+    font-weight: 700;
+}
+
+.HOPE__letters p{
+    font-size: var(--size-xl);
+    letter-spacing: .5em;
+    color: var(--clr-white);
+    font-weight: 800;
+}
+
+/* .mission{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    height: 63rem;
+    align-items: center;
+}
+
+.mission p{
+    font-size: var(--size-xl);
+}
+
+.mission__title{
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: var(--size-5xl);
+}
+
+.mission__p1{
+    position: relative;
+    left: -1.5rem;
+    padding: 1rem;
+    background-color: var(--clr-lblue);
+    border-radius: 20px;
+}
+
+.mission__imgDiv{
+    position: relative;
+    width: 16rem;
+    height: 24rem;
+    border-radius: 20px;
+    top: 1rem;
+    left: -2rem;
+    z-index: -1;
+}
+
+.mission__overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.mission__img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-position: cover;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.mission__imgDiv2{
+    display: none;
+}
+
+.mission__img2{
+    display: none;
+}
+
+.mission__p2{
+    width: 18rem;
+    text-align: center;
+    position: relative;
+    right: -2rem;
+    top: -21rem;
+    z-index: 1;
+}
+
+.mission__p3{
+    position: relative;
+    text-align: right;
+    top: -21rem;
+    right: -1.5rem;
+    padding: 1rem;
+    background-color: var(--clr-lblue);
+    border-radius: 20px;
+} */
+
+.mission{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    position: relative;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    height: 63rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    height: 76.5rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+.mission p{
+    font-size: var(--size-xl);
+}   
+
+.mission__title{
+    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: var(--size-5xl);
+    margin: 0 auto;
+    grid-area: 1/1/2/16;
+}
+
+.mission__p1{
+    padding: 1rem;
+    background-color: var(--clr-lblue);
+    border-radius: 20px;
+    color: var(--clr-orange);
+    text-align: center;
+    border-radius: 20px;
+    /* width: 50rem; */
+    top: 0;
+    grid-area: 2/1/3/16;
+}
+
+.mission__imgDiv{
+    /* width: 28rem;
+    height: 39.25rem;
+    position:absolute;
+    top: 17.75rem;
+    left: 0;
+    z-index: -1;
+    margin: 0; */
+    position: relative;
+    border-radius: 20px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: 3/1/13/8;
+}
+
+.mission__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center 10%;
+}
+
+.mission__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.mission__imgDiv2{
+    display: inline-block;
+    /* position: relative;
+    top: 27rem;
+    left: 24.5rem;
+    width: 17rem;
+    height: 18rem; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: 13/10/20/16;
+    border-radius: 20px;
+}
+
+.mission__overlay2{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.mission__img2{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+    object-fit: cover;
+    grid-area: 13/10/20/16;
+}
+
+.mission__p2{
+    /* position: relative; */
+    z-index: -1;
+    /* width: 17rem; */
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    background-color: var(--clr-blue);
+    border-radius: 20px;
+    text-align: right;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: 3/8/13/16;
+    overflow-y: scroll;
+}
+
+.mission__p3{
+    position: relative;
+    /* width: 28rem; */
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: var(--clr-lblue);
+    border-radius: 20px;
+    text-align: left;
+    font-weight: 300;
+    color: var(--clr-dblue);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: 13/1/20/10;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.CTA{
+    background-color: var(--clr-blue);
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5rem;
+
+}
+
+.CTA__title{
+    font-size: var(--size-3xl);
+    font-weight: 400;
+}
+
+.CTA__btn{
+    font-size: var(--size-3xl);
+    font-weight: 700;
+    background-color: var(--clr-orange);
+    color: var(--clr-dblue);
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 1rem;
+    width: 100%;
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+
+} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .Hero{
+        flex-direction: row;
+        top: 0;
+        right: 6rem;
+        margin-bottom: 8rem;
+    }
+    
+    .Hero__chunk{
+        top: 0;
+        left: 39.5rem;
+        text-align: right;
+        background-color: rgba(0,0,0,.3);
+        border-radius: 20px;
+        padding: .5rem;       
+    }
+    
+    .Hero__title{
+        font-size: var(--size-6xl);
+        font-weight: 300;
+    }
+    
+    .Hero__subTitle{
+        font-size: var(--size-2xl);
+        font-weight: 100;
+        opacity: .75;
+        width: fit-content;
+    }
+    
+    .btn{
+        font-size: var(--size-2xl);
+        font-weight: 400;
+        position: relative;
+        right: -2rem;
+    }
+    
+    .Hero__img{
+        width: 70rem;
+        height: 45rem;
+        z-index: -1;
+    }
+
+    .Hero__img--s{
+        border-radius: 20px;   
+    }
+
+    .HOPE{
+        gap: 2rem;
+        top: -4rem;
+        background: linear-gradient(to right, #0f2f6a 10%, rgba(0,0,0,.6), rgba(0,0,0,0)), url("./HOPE.png");
+        background-repeat: none;
+        background-position: 65% center;
+        background-size: cover;
+    }
+    
+    .HOPE__letters{
+        display: flex;
+        gap: 1rem;
+        transition: transform 0.5s ease;
+    }
+    
+    .HOPE__letters h1{
+        padding: 2rem;
+        font-size: var(--size-6xl);
+        font-weight: 400;
+    }
+    
+    .HOPE__letters p{
+        font-size: var(--size-2xl);
+        font-weight: 700;
+        letter-spacing: 1em;
+    }
+
+    .mission__p1{
+        grid-area: 2/1/4/16;
+    }
+
+    .mission__imgDiv{
+        grid-area: 4/1/14/11;
+    }
+
+    .mission__imgDiv2{
+        grid-area: 14/9/19/16;
+    }
+
+    .mission__img2{
+        grid-area: 14/9/19/16;
+    }
+
+    .mission__p2{
+        grid-area: 4/11/14/16;
+    }
+
+    .mission__p3{
+        grid-area: 14/1/19/9;
+    }
+  
+    .CTA{
+        background-color: var(--clr-blue);
+        border-radius: 20px;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 1rem;
+        /* margin-top: 5rem; */
+    }
+    
+    .CTA__title{
+        font-size: var(--size-3xl);
+        font-weight: 400;
+    }
+    
+    .CTA__btn{
+        font-size: var(--size-3xl);
+        font-weight: 700;
+        background-color: var(--clr-orange);
+        color: var(--clr-dblue);
+        padding: 1rem;
+        border-radius: 20px;
+        margin: 1rem;
+        width: 100%;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .Hero{
+        flex-direction: row;
+        top: 0;
+        right: 7rem;
+        margin-bottom: 8rem;
+    }
+    
+    .Hero__chunk{
+        left: 53rem;
+    }
+
+    .Hero__img--s{
+        display: none;
+    }
+
+    .Hero__img--l{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;    
+        border-radius: 20px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280x) {
+    .mission__imgDiv{
+        grid-area: 4/1/14/10;
+    }
+
+    .mission__imgDiv2{
+        grid-area: 14/11/19/16;
+    }
+
+    .mission__img2{
+        grid-area: 14/11/19/16;
+    }
+
+    .mission__p2{
+        grid-area: 4/10/14/16;
+    }
+
+    .mission__p3{
+        grid-area: 14/1/19/11;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {   
+    .Hero__chunk{
+        left: 75.75rem;
+        width: 15rem;
+    }
+
+    .mission__imgDiv{
+        grid-area: 4/1/14/13;
+    }
+
+    .mission__img{
+        object-position: center 55%;
+    }
+
+    .mission__imgDiv2{
+        grid-area: 14/5/19/16;
+    }
+
+    .mission__img2{
+        grid-area: 14/5/19/16;
+    }
+
+    .mission__p2{
+        grid-area: 4/13/14/16;
+    }
+
+    .mission__p3{
+        grid-area: 14/1/19/5;
+    }
+
+}

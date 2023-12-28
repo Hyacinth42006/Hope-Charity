@@ -1,0 +1,139 @@
+.footer{
+    display: flex;
+    background-color: var(--clr-blue);
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__socials{
+    display: flex;
+    width: 20rem;
+    font-weight: 600;
+}
+
+.footer__socials__logos{
+    min-width: fit-content;
+    position: relative;
+    left: -2rem;
+}
+
+.footer__socials__ref{
+    min-width: fit-content;
+    position: relative;
+    left: -2rem;
+}
+
+.footer__line{
+    border-top: 3px solid var(--clr-dblue);
+    width: 90%;
+}
+
+.footer__info{
+    display: flex;
+    text-align: center;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__info h3{
+    font-weight: 900;
+    font-size: var(--size-2xl);
+}
+
+.footer__info__details{
+    display: flex;
+    gap: 2em;
+    width: 22rem;
+    justify-content: space-evenly;
+    font-weight: 600;
+    align-items: center;
+    background-color: rgba(15, 47, 106, 0.4);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+
+.footer__info__details p{
+    font-size: var(--size-lg);
+    font-weight: 700;
+}
+
+.footer__dates{
+    position: relative;
+    top: -1rem;
+}
+
+.footer__title{
+    position: relative;
+    bottom: -1rem;
+    z-index: 100;
+    font-weight: 800;
+}
+
+.footer__calender{
+    width: 10rem !important;
+    height: 10.5rem ;
+    overflow-y: scroll;
+}
+
+.footer li:hover{
+    color: var(--clr-orange);
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+
+} */
+
+/* md */
+@media (min-width: 768px){
+    .footer{
+        flex-direction: row;
+        font-size: var(--size-lg);
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .footer__line{
+        border-top: 0 solid var(--clr-dblue);
+        width: 0%;    
+        border-left: 3px solid var(--clr-dblue);
+        height: 15rem;
+    }
+
+    .footer__socials{
+        font-weight: 400;
+    }
+
+    .footer__info__details p{
+        font-weight: 400;
+    }
+
+    .footer__info h3{
+        font-weight: 800;
+    }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {
+
+} */
+
+/* xl */
+/* @media (min-width: 1280x) {
+
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+    
+} */

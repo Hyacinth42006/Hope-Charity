@@ -1,0 +1,114 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url(../logoNB.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-left: 1.4rem;
+    flex: 1;
+    gap: .75rem;
+}
+
+.header__name{
+    display: none;
+}
+
+.header__link{
+    text-decoration: none;
+    background-color: var(--clr-blue);
+    padding: .75rem;
+    color: var(--clr-white);
+    border-radius: 20px;
+}
+
+.header__link:hover{
+    background-color: var(--clr-lblue);
+    padding: 1rem;
+    color: var(--clr-orange);
+}
+/* xs */
+/* @media (min-width: 475px) {
+    .header{
+        background-position: 48% 50%;
+    }
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+
+} */
+
+/* md */
+@media (min-width: 768px) {
+    .header{
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-image: none;
+        background-color: var(--clr-blue);
+        height: 6rem;
+    }
+    
+    .header__menu{
+        margin-left: 0;
+        padding: 0;
+        gap: 1.25em;
+    }
+
+    .header__name{
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+        font-size: var(--size-xxs);
+    }
+
+    .header__logo{
+        display: inline;
+        overflow-x: visible;
+        height: 4rem;
+    }
+
+    .header__link{
+        font-size: var(--size-lg);
+        padding: 0;
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .header__link:hover{
+        background-color: var(--clr-lblue);
+        padding: .5rem;
+        border-radius: .5rem;
+        color: var(--clr-orange);
+    }
+}
+
+/* lg */
+/* @media (min-width: 1024px) {
+
+} */
+
+/* xl */
+/* @media (min-width: 1280x) {
+
+} */
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .header__link{
+        font-size: var(--size-3xl);
+    }
+}
