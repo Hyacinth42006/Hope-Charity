@@ -417,7 +417,7 @@
 
     .HOPE{
         gap: 2rem;
-        top: -4rem;
+        top: -2rem;
         background: linear-gradient(to right, #0f2f6a 10%, rgba(0,0,0,.6), rgba(0,0,0,0)), url("./HOPE.png");
         background-repeat: none;
         background-position: 65% center;
