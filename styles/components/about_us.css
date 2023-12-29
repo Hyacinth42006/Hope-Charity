@@ -161,16 +161,16 @@ body{
 
 .senior__dots{
     display: flex;
-    position: absolute;
-    bottom: -53.25rem;
+    position:relative;
+    bottom: 2.3rem;
     left: 38%;
     z-index: 1;
 }
 
 .junior__dots{
     display: flex;
-    position: absolute;
-    bottom: -86.25rem;
+    position: relative;
+    bottom: 2.3rem;
     left: 38%;
     z-index: 1;
 }
