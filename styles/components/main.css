@@ -64,13 +64,11 @@
     padding: 1rem;
     top: -3rem;
     /* margin: 4rem 0; */
-    background: linear-gradient(to right, #0f2f6a 10%, rgba(0,0,0,.6), rgba(0,0,0,0)), url("./HOPE.png");
+    background: linear-gradient(to right, #0f2f6a 10%, rgba(0,0,0,.6), rgba(0,0,0,0)), url(/HOPE.png);
     background-repeat: none;
     background-position: 75% center;
     background-size: cover;
     border-radius: 20px;
-    background-clip: padding-box;
-    border: none;
 }
 
 .HOPE__letters{
@@ -416,7 +414,7 @@
     .HOPE{
         gap: 2rem;
         top: -1.75rem;
-        background: linear-gradient(to right, #0f2f6a 10%, rgba(0,0,0,.6), rgba(0,0,0,0)), url("./HOPE.png");
+        background: linear-gradient(to right, #0f2f6a 10%, rgba(0,0,0,.6), rgba(0,0,0,0)), url(/HOPE.png);
         background-repeat: none;
         background-position: 65% center;
         background-size: cover;
