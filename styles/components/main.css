@@ -340,12 +340,10 @@
     justify-content: space-around;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 5rem;
-
 }
 
 .CTA__title{
-    font-size: var(--size-3xl);
+    font-size: var(--size-xl);
     font-weight: 400;
 }
 
@@ -357,7 +355,7 @@
     padding: 1rem;
     border-radius: 20px;
     margin: 1rem;
-    width: 100%;
+    width: 80%;
 }
 
 /* xs */
@@ -417,7 +415,7 @@
 
     .HOPE{
         gap: 2rem;
-        top: -2rem;
+        top: -1.75rem;
         background: linear-gradient(to right, #0f2f6a 10%, rgba(0,0,0,.6), rgba(0,0,0,0)), url("./HOPE.png");
         background-repeat: none;
         background-position: 65% center;
@@ -479,19 +477,18 @@
     }
     
     .CTA__title{
-        font-size: var(--size-3xl);
-        font-weight: 400;
+        font-size: var(--size-2xl);
+        font-weight: 300;
     }
     
     .CTA__btn{
-        font-size: var(--size-3xl);
-        font-weight: 700;
+        font-size: var(--size-4xl);
+        font-weight: 400;
         background-color: var(--clr-orange);
         color: var(--clr-dblue);
         padding: 1rem;
         border-radius: 20px;
-        margin: 1rem;
-        width: 100%;
+        /* margin: 2rem; */
     }
 }
 
@@ -499,7 +496,7 @@
 @media (min-width: 1024px) {
     .Hero{
         flex-direction: row;
-        top: 0;
+        top: -1rem;
         right: 7rem;
         margin-bottom: 8rem;
     }
@@ -549,6 +546,10 @@
     .Hero__chunk{
         left: 75.75rem;
         width: 15rem;
+    }
+
+    .HOPE{
+        top: -1rem;
     }
 
     .mission__imgDiv{
