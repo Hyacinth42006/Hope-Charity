@@ -14,7 +14,7 @@ let endDate = new Date(today.getFullYear(), today.getMonth() + 1, 0);
 
 const rule = new RRule({
     freq: RRule.WEEKLY,
-    dtstart: new Date(Date.UTC(2023, 11, 6, 11, 0, 0)),
+    // dtstart: new Date(Date.UTC(2023, 11, 6, 11, 0, 0)),
     interval: 2,
     wkst: RRule.WE,
     byweekday: RRule.WE,
@@ -75,7 +75,7 @@ const reocurring = rule.all().map(function(date){
                 {
                     rrule: {
                         freq: RRule.WEEKLY,
-                        dtstart: new Date(Date.UTC(2023, 11, 6, 11, 0, 0)),
+                        dtstart: startDate,
                         interval: 2,
                         wkst: RRule.WE,
                         byweekday: RRule.WE,
@@ -98,7 +98,7 @@ const reocurring = rule.all().map(function(date){
                 });
               },
             height: "auto",
-            initialDate: "2023-12-23",
+            // initialDate: "2023-12-23",
         });
     };
 
