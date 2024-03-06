@@ -13,6 +13,8 @@
     display: flex;
     width: 20rem;
     font-weight: 600;
+    text-decoration: none;
+    color: var(--clr-white);
 }
 
 .footer__socials__logos{
@@ -25,6 +27,11 @@
     min-width: fit-content;
     position: relative;
     left: -2rem;
+}
+
+.footer__socials__ref a{
+    text-decoration: none;
+    color: var(--clr-white);
 }
 
 .footer__line{
